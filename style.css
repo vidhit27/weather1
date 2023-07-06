@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #000; */
+    /* background-image: url('https://unsplash.com/s/photos/delhi-city'); */
+}
+
+.container{
+    width: 490px;
+    height: min-content;
+    background-color: #000;
+    border-radius: 12px;
+    padding: 28px;
+    opacity: 0.65;
+    color: #fff;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input{
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #000;
+    background-color: #e6f5fb;
+    padding: 12px 16px;
+    border-radius: 14px;
+}
+
+.search-box input::placeholder{
+    color: #000;
+}
+
+.search-box button{
+    width: 46px;
+    height: 46px;
+    background-color: #e6f5fb;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search-box button:hover{
+    color: #fff;
+    background-color: #ababab;
+}
+
+.weather-body{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+    display: none;
+}
+.weather-body img{
+    width: 40%;
+    margin-right:16vw ;
+}
+
+.weather-box{
+    margin-block: 20px;
+    margin-top: -87px;
+    margin-left: 197px;
+    text-align: center;
+}
+
+.weather-box .temperature{
+    font-size: 60px;
+    bottom:32px;
+    font-weight: 800;
+    position: relative;
+}
+
+.weather-box .temperature sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.weather-box .description{
+    font-size: 30px;
+    bottom: 32px;
+    position: relative;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.humidity, .wind, .pressure,.feels,.visibility{
+    display: flex;
+    align-items: center;
+    border-left: 4px solid darkcyan;
+}
+
+
+.humidity,.visibility{
+    margin-left: 20px;
+    padding-left: 14px;
+}
+.feels{
+    margin-left: 154px;
+    padding-left: 14px;
+}
+
+.wind{
+    margin-right: 20px;
+    padding-left: 14px;
+}
+.pressure{
+    margin-right: 50px;
+    padding-left: 24px;
+}
+.weather-details i{
+    font-size: 36px;
+}
+
+.weather-details .text{
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.text span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.location-not-found{
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.location-not-found h1{
+    font-size: 20px;
+    color: #6b6b6b;
+    margin-block-end: 15px;
+}
+.location-not-found img{
+    width: 80%;
+}
+
+#myVideo {
+    position: fixed;
+    /* display: none; */
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+ #slidebg{
+    width:100%;
+    height:100vh;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    backface-visibility:hidden;
+}
+#ct{
+    padding-right: 11px;
+    font-size: 76px;
+    margin-right: 15vw;
+    border-right: 4px solid darkcyan;
+    color: goldenrod;
+}
+#date{
+    font-size: 17px;
+    margin-right: 15vw;
+}
+
+.im{
+    position: relative;
+    bottom: 44px;
+    right: 38px;
+}
+.h{
+    position: relative;
+    bottom: 67px;
+    font-size: 41px;
+    color: darkcyan;
+}
+.ps{
+    position: relative;
+    bottom: 59px;
+    font-size: 20px;
+    border-left: 4px solid darkcyan;
+    padding-left: 13px;
+}
